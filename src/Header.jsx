@@ -1,5 +1,7 @@
 import React from "react";
 import logo from "./imagen/libro-logo-CMS.png";
+import carro from "./imagen/carro.png";
+
 const Header = () => {
     return (
         <div className="Container">
@@ -19,7 +21,11 @@ const Header = () => {
   <li className="nav-item">
     <a className="nav-link link_header" href="#">Sucursales</a>
   </li>
+  <li className="nav-item">
+    <a className="nav-link active link_header" aria-current="page" href="#"><img src={carro} width="30" alt="" /></a>
+  </li>
 </ul>
+
 </div>
     )
 }

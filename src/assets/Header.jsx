@@ -1,6 +1,6 @@
 import React from "react";
-import logo from "./imagen/libro-logo-CMS.png";
-import carro from "./imagen/carro.png";
+import logo from "../imagen/libro-logo-CMS.png";
+import CartWidget from "./CardWidget";
 
 const Header = () => {
     return (
@@ -22,8 +22,9 @@ const Header = () => {
     <a className="nav-link link_header" href="#">Sucursales</a>
   </li>
   <li className="nav-item">
-    <a className="nav-link active link_header" aria-current="page" href="#"><img src={carro} width="30" alt="" /></a>
+    <a className="nav-link link_header" href="#"><CartWidget/></a>
   </li>
+
 </ul>
 
 </div>

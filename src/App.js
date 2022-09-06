@@ -1,8 +1,7 @@
 import './App.css';
-import Header from './Header';
-import Recomendaciones from './Recomendacions';
-import Footer from './Footer';
-import ProductosLista from './ListaProductos';
+import ItemListContainer from './assets/ItemListContainer';
+import Header from './assets/Header';
+import Footer from './assets/Footer';
 
 
 function App() {
@@ -10,8 +9,7 @@ function App() {
     <div className="Container-fluid fondo_violeta">
         <Header/>
         <hr/>
-        <ProductosLista />
-        <Recomendaciones />
+        <ItemListContainer/>
         <Footer />
     </div>
 );

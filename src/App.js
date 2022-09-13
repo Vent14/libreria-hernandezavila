@@ -1,6 +1,6 @@
 import './App.css';
-import ItemListContainer from './assets/ItemListContainer';
-import Header from './assets/Header';
+import ItemListContainer from './assets/ItemListContainer/ItemListContainer';
+import Header from './assets/Navbar/Header';
 import Footer from './assets/Footer';
 
 

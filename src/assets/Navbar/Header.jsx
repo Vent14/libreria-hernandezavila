@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../imagen/libro-logo-CMS.png";
-import CartWidget from "./CardWidget";
+import CartWidget from "../CardWid/CardWidget";
 
 const Header = () => {
     return (

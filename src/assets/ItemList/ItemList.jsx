@@ -1,4 +1,4 @@
-import Item from "../ItemList/ItemList";
+import Item from "../Item/Item"
 import React from "react";
 
 const ItemList = ({data = []}) => {

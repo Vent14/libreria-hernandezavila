@@ -31,15 +31,14 @@ export const ItemListContainer = ({texto}) => {
         console.log = ('Compraste $(quantify) unidades');
     }
 
-
+if (data.length !== 0) {
     return (
         <>
             <Title greeting={texto}/>
             <ItemCount initial={1} stock={5} onAdd={onAdd} />
             <ItemList data={data} />
-            
+            <Item />
         </>
     );
-}
-
+}}
 export default ItemListContainer;

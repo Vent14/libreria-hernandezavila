@@ -24,7 +24,7 @@ const increase = () => {
             <span>{count}</span>
             <button disabled={count >= stock} onClick={increase}>+</button>
             <div>
-                <button>Agregar Carrito</button>
+                <button disabled = {stock <= 0} onClick= {onAdd(count)}>Agregar Carrito</button>
             </div>
         </div>
     );

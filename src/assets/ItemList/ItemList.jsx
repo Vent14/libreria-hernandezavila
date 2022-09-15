@@ -1,9 +1,11 @@
 import Item from "../Item/Item"
 import React from "react";
 
-const ItemList = ({data = []}) => {
+const ItemList = ({data}) => {
     return (
-        data.map(libro => <Item key={libro.id} info={libro}/>)
+        <div>
+        {data.map(libro => <Item key={libro.id} info={libro}/>)}
+        </div>
     )
 }
 

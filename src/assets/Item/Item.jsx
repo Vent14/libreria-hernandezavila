@@ -1,14 +1,15 @@
 import './item.css';
 import React from 'react';
 
-const Item = (info) => {
+export const Item = ({info}) => {
     return (
-        <a href="" className="libro">
+        <div>
+        <a className='libro'>
             <img src={info.image} alt="" />
-            <p>{info.tittle}</p>
+            <p>{info.title}</p>
         </a>
-
-    );
+        </div>
+    )
 }
 
-export default Item;
+export default Item

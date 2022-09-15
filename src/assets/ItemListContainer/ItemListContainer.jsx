@@ -2,9 +2,10 @@ import React, {useEffect, useState} from "react";
 import Title from "../../Title";
 import ItemCount from "../Itemcount/ItemCount"; 
 import ItemList from "../ItemList/ItemList";
-import Item from "../Item/Item";
 
 
+
+export const ItemListContainer = ({texto}) => {
 
 const libro = [
     { id: 1, image:'https://m.media-amazon.com/images/I/613iyqY5DqL.jpg', title:'Momo'},
@@ -12,9 +13,9 @@ const libro = [
     { id: 3, Image:'https://m.media-amazon.com/images/I/51AOsVIXgqL._SY346_.jpg', title:'Tratados morales'},
 ];
 
-export const ItemListContainer = ({texto}) => {
 
-    const [data, setData] = useState([]);
+    const [data, setData] = useState();
+    console.log("🚀 ~ file: ItemListContainer.jsx ~ line 19 ~ ItemListContainer ~ log")
 
     useEffect(() => {
             const getData = new Promise(resolve =>(
@@ -31,14 +32,15 @@ export const ItemListContainer = ({texto}) => {
         console.log = ('Compraste $(quantify) unidades');
     }
 
-if (data.length !== 0) {
+if(data) {
     return (
         <>
-            <Title greeting={texto}/>
+            <Title greeting="Destacado"/>
             <ItemCount initial={1} stock={5} onAdd={onAdd} />
             <ItemList data={data} />
-            <Item />
+
         </>
     );
-}}
+}
+}
 export default ItemListContainer;
